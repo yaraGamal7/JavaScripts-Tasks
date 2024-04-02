@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Cards</title>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(252, 210, 210);
+        }
+        
+        #employeeContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            margin-top: 40px;
+            
+        }
+
+        img {
+            width: 200px;
+            height: 180px;
+            border-radius: 10px;
+        }
+
+        #employeeContainer div{
+            border: 2px solid #8f3737;
+            padding: 40px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 10px;    
+            width: 200px;
+            height: 320px;
+            background-color: lightpink;
+            
+        }
+
+        h1{
+            text-align: center;
+            font-weight: bold;
+           font-style: italic;
+           
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Employee Information</h1>
+    <div id="employeeContainer"></div>
+    <p>Total Persons: <span id="totalCount"></span></p>
+
+    <script src="functionCard.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 70px 300px;
+            font-family: Andalus;
+            font-size: x-large;
+            font-weight: bold;
+            background-color: rgb(248, 172, 238);
+        }
+
+        [type=text]{
+            font-family: 'Century Gothic';
+            font-size: large;
+            width:210 ;
+        }
+        [type=button] {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            width:100 ;
+        }
+
+        table {
+            width: 400px;
+            border: 3px solid rgb(190, 21, 63);
+
+        }
+
+        .PD {
+            background-color: rgb(210, 120, 238);
+        }
+
+        .OS {
+            background-color: rgb(231, 70, 97);
+        }
+
+        .AI {
+            background-color: rgb(88, 127, 235);
+        }
+
+        .btn {
+            /* background-color:lightskyblue; */
+            border: none;
+            font-size: 16px;
+        }
+        .icons {
+            color: red;
+        }
+        .table tr{
+            text-align: center;
+        }
+    </style>
+    <script src="functions.js"></script>
+    <script src="form.js"></script>
+      
+</head>
+
+<body>
+    <form>
+        <table border="0" cellpadding="5" cellspacing="10">
+            <tr align="center">
+                <td>Department</td>
+                <td><input name="department" type="radio" value="AI">AI</td>
+                <td><input name="department" type="radio" value="OS">OS</td>
+                <td><input name="department" type="radio" value="PD" checked>PD</td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><b>Student Name</b></td>
+                <td colspan="2"><input name="studentName" type="text" required></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><b>Student Grade</b></td>
+                <td colspan="2"><input name="studentGrade" type="text" required></td>
+            </tr>
+            <tr >
+                <td colspan="4">
+                    <input type="button" value="Add">
+                </td>
+            </tr>
+             
+        </table>
+    </form>
+</body>
+
+</html>

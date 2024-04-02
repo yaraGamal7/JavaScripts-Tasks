@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Cards</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-image: url(body.jpg);
+            background-color: transparent;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .container {
+            /* display: flex; */
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .country {
+            background-color: lightpink;
+            align-items: center;
+            flex-wrap: wrap;
+            display:inline-table;
+            border-radius: 8px;
+            border: 2px solid rgb(196, 53, 75);
+            margin: 20px;
+            width: 300px;
+            height: 380px;  
+        }
+
+        .country:hover {
+            transform: scale(1.05);
+        }
+
+        .country img {
+            max-width: 90%;
+            height: 180px;
+            margin: 15px;
+            border-radius: 8px;
+            margin-bottom: 0;
+        }
+
+        .country h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            margin: 10px;
+            color: #000000;
+            font-family: fantasy;
+            text-align: center;
+           
+        }
+
+        .country p {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+            margin: 10px;
+            color: #941919;
+            font-family: fantasy;
+            
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="countries" id="countryData">
+        
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
